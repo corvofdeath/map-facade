@@ -9,6 +9,8 @@ public class SalaBuilder {
 	public static SalaBuilder mockSala() {
 		SalaBuilder builder = new SalaBuilder();
 		builder.sala = new Sala("c202");
+		builder.sala.setDisciplina(DisciplinaBuilder.mockDisciplina().getDisciplina());
+		builder.sala.setProfessor(ProfessorBuilder.mockProfessor().getProfessor());
 		
 		return builder;
 	}

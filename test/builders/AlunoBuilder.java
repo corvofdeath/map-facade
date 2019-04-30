@@ -1,6 +1,7 @@
 package builders;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import domain.entities.Aluno;
 import domain.entities.Historico;
@@ -12,7 +13,7 @@ public class AlunoBuilder {
 	
 	public static AlunoBuilder mockAluno() {
 		AlunoBuilder builder = new AlunoBuilder();
-		builder.aluno = new Aluno("Thiago", new ArrayList<Matricula>(), new ArrayList<Historico>());
+		builder.aluno = new Aluno("Thiago", new ArrayList<Matricula>() , new ArrayList<Historico>());
 		
 		return builder;
 	}
