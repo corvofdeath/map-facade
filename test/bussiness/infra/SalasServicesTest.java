@@ -26,7 +26,7 @@ public class SalasServicesTest {
 	@Before
     public void setUp(){
 		this.repositorio = new BaseRepository<Sala>(new ArrayList<Sala>());
-		this.salasServices = new SalasServices(repositorio);
+		this.salasServices = new SalasServices(this.repositorio);
 		this.sala = SalaBuilder.mockSala().getSala();
 		this.professor = ProfessorBuilder.mockProfessor().getProfessor();
 		this.disciplina = DisciplinaBuilder.mockDisciplina().getDisciplina();

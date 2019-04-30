@@ -1,18 +1,15 @@
 package bussiness.infra;
 
-import domain.entities.Aluno;
 import domain.entities.Disciplina;
 import domain.entities.Professor;
 import domain.entities.Sala;
 import repositories.BaseRepository;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class SalasServices {
 
     private BaseRepository<Sala> repository;
 
+    
     public SalasServices(BaseRepository<Sala> repository) {
         this.repository = repository;
     }
